@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
 import { PrimarySchoolPage } from './pages/PrimarySchoolPage';
 import { SecondarySchoolPage } from './pages/SecondarySchoolPage';
 import { EventHallPage } from './pages/EventHallPage';
@@ -17,6 +18,8 @@ function AppContent() {
     switch (currentPage) {
       case 'home':
         return <HomePage />;
+      case 'about':
+        return <AboutPage />;
       case 'primary':
         return <PrimarySchoolPage />;
       case 'secondary':

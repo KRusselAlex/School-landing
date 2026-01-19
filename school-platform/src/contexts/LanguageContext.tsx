@@ -18,6 +18,7 @@ const translations = {
     'nav.secondary': 'Secondary School',
     'nav.eventHall': 'Event Hall',
     'nav.contact': 'Contact',
+    'nav.about': 'About Us',
     
     // Motto
     'motto': 'Success at the end of the effort',
@@ -30,6 +31,15 @@ const translations = {
     'getStarted': 'Get Started',
     'readMore': 'Read More',
     'viewDetails': 'View Details',
+    'joinUs': 'Join Us Today',
+    'scheduleVisit': 'Schedule a Visit',
+    'discoverMore': 'Discover More',
+    
+    // Motivational
+    'invest.future': 'Invest in your child\'s future',
+    'success.begins': 'Success begins here',
+    'excellence.education': 'Excellence in Education',
+    'bright.future': 'Building a Bright Future',
     
     // Hero
     'hero.title': 'Complex Pascal',
@@ -58,11 +68,23 @@ const translations = {
     'contact.subtitle': 'Get in touch with Complex Pascal',
     'contact.message': 'Contact us for more information',
     
+    // About
+    'about.title': 'About Us',
+    'about.subtitle': 'Our Story, Vision & Mission',
+    
     // Footer
     'footer.about': 'Bilingual education excellence and premier event venue in Cameroon.',
     'footer.quickLinks': 'Quick Links',
     'footer.ourSchools': 'Our Schools',
     'footer.rights': 'All rights reserved',
+    
+    // FAQ
+    'faq.title': 'Frequently Asked Questions',
+    'faq.subtitle': 'Everything you need to know',
+    
+    // Testimonials
+    'testimonials.title': 'What People Say About Us',
+    'testimonials.subtitle': 'Hear from our community',
   },
   fr: {
     // Navigation
@@ -71,6 +93,7 @@ const translations = {
     'nav.secondary': 'École Secondaire',
     'nav.eventHall': 'Salle de Fête',
     'nav.contact': 'Contact',
+    'nav.about': 'À Propos',
     
     // Motto
     'motto': 'Le succès au bout de l\'effort',
@@ -83,6 +106,15 @@ const translations = {
     'getStarted': 'Commencer',
     'readMore': 'Lire Plus',
     'viewDetails': 'Voir Détails',
+    'joinUs': 'Rejoignez-Nous Aujourd\'hui',
+    'scheduleVisit': 'Planifier une Visite',
+    'discoverMore': 'Découvrir Plus',
+    
+    // Motivational
+    'invest.future': 'Investissez dans l\'avenir de votre enfant',
+    'success.begins': 'Le succès commence ici',
+    'excellence.education': 'Excellence en Éducation',
+    'bright.future': 'Construire un Avenir Brillant',
     
     // Hero
     'hero.title': 'Complex Pascal',
@@ -111,11 +143,23 @@ const translations = {
     'contact.subtitle': 'Prenez contact avec Complex Pascal',
     'contact.message': 'Contactez-nous pour plus d\'informations',
     
+    // About
+    'about.title': 'À Propos de Nous',
+    'about.subtitle': 'Notre Histoire, Vision & Mission',
+    
     // Footer
     'footer.about': 'Excellence en éducation bilingue et lieu d\'événements premier au Cameroun.',
     'footer.quickLinks': 'Liens Rapides',
     'footer.ourSchools': 'Nos Écoles',
     'footer.rights': 'Tous droits réservés',
+    
+    // FAQ
+    'faq.title': 'Questions Fréquemment Posées',
+    'faq.subtitle': 'Tout ce que vous devez savoir',
+    
+    // Testimonials
+    'testimonials.title': 'Ce Que Disent Les Gens de Nous',
+    'testimonials.subtitle': 'Écoutez notre communauté',
   }
 };
 

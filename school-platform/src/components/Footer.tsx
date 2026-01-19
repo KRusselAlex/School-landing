@@ -38,6 +38,11 @@ export function Footer() {
                 </button>
               </li>
               <li>
+                <button onClick={() => navigateTo('about')} className="hover:text-white transition-colors">
+                  {t('nav.about')}
+                </button>
+              </li>
+              <li>
                 <button onClick={() => navigateTo('primary')} className="hover:text-white transition-colors">
                   {t('nav.primary')}
                 </button>

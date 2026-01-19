@@ -12,7 +12,7 @@ export function Header() {
   const { navigateTo } = useNavigation();
 
   const handleNavigation = (
-    page: "home" | "primary" | "secondary" | "eventHall" | "contact",
+    page: "home" | "about" | "primary" | "secondary" | "eventHall" | "contact",
   ) => {
     navigateTo(page);
     setIsMenuOpen(false);
@@ -29,7 +29,6 @@ export function Header() {
           >
             <div className="flex items-center gap-2">
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                {/* <span className="text-white text-xl font-bold">CP</span>*/}
                 <img
                   src={logo}
                   alt="logo"
@@ -56,6 +55,12 @@ export function Header() {
               className="text-foreground hover:text-primary transition-colors"
             >
               {t("nav.home")}
+            </button>
+            <button
+              onClick={() => handleNavigation("about")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t("nav.about")}
             </button>
             <button
               onClick={() => handleNavigation("primary")}
@@ -107,6 +112,12 @@ export function Header() {
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
               >
                 {t("nav.home")}
+              </button>
+              <button
+                onClick={() => handleNavigation("about")}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                {t("nav.about")}
               </button>
               <button
                 onClick={() => handleNavigation("primary")}

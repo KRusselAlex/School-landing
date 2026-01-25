@@ -1,35 +1,47 @@
-import { useState } from 'react';
-import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Clock, Send, Facebook, Instagram, MessageCircle, Award } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card';
-import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/textarea';
-import { useLanguage } from '../contexts/LanguageContext';
-import { toast } from 'sonner@2.0.3';
+import { useState } from "react";
+import { motion } from "motion/react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Send,
+  Facebook,
+  Instagram,
+  MessageCircle,
+  Award,
+} from "lucide-react";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { useLanguage } from "../contexts/LanguageContext";
+import { toast } from "sonner@2.0.3";
 
 export function ContactPage() {
   const { language, t } = useLanguage();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, this would send data to a backend
     toast.success(
-      language === 'en' 
-        ? 'Message sent successfully! We will contact you soon.' 
-        : 'Message envoyé avec succès! Nous vous contacterons bientôt.'
+      language === "en"
+        ? "Message sent successfully! We will contact you soon."
+        : "Message envoyé avec succès! Nous vous contacterons bientôt.",
     );
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -51,14 +63,12 @@ export function ContactPage() {
           >
             <Mail className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl mb-6 text-white">
-              {t('contact.title')}
+              {t("contact.title")}
             </h1>
             <p className="text-xl mb-4 text-white/95">
-              {t('contact.subtitle')}
+              {t("contact.subtitle")}
             </p>
-            <p className="text-lg text-white/90">
-              {t('contact.message')}
-            </p>
+            <p className="text-lg text-white/90">{t("contact.message")}</p>
           </motion.div>
         </div>
       </motion.section>
@@ -72,11 +82,11 @@ export function ContactPage() {
       >
         <div className="container mx-auto px-4 text-center">
           <Award className="w-12 h-12 mx-auto mb-4 text-secondary" />
-          <h2 className="text-3xl mb-2 text-primary italic">
-            "{t('motto')}"
-          </h2>
+          <h2 className="text-3xl mb-2 text-primary italic">"{t("motto")}"</h2>
           <p className="text-muted-foreground">
-            {language === 'en' ? 'Our Guiding Principle' : 'Notre Principe Directeur'}
+            {language === "en"
+              ? "Our Guiding Principle"
+              : "Notre Principe Directeur"}
           </p>
         </div>
       </motion.section>
@@ -95,12 +105,14 @@ export function ContactPage() {
               <Card className="shadow-xl">
                 <CardContent className="p-8">
                   <h3 className="text-2xl mb-6">
-                    {language === 'en' ? 'Send Us a Message' : 'Envoyez-Nous un Message'}
+                    {language === "en"
+                      ? "Send Us a Message"
+                      : "Envoyez-Nous un Message"}
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                       <label className="block mb-2 text-sm">
-                        {language === 'en' ? 'Full Name' : 'Nom Complet'}
+                        {language === "en" ? "Full Name" : "Nom Complet"}
                       </label>
                       <Input
                         type="text"
@@ -109,7 +121,9 @@ export function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full"
-                        placeholder={language === 'en' ? 'John Doe' : 'Jean Dupont'}
+                        placeholder={
+                          language === "en" ? "John Doe" : "Jean Dupont"
+                        }
                       />
                     </div>
                     <div>
@@ -126,7 +140,7 @@ export function ContactPage() {
                     </div>
                     <div>
                       <label className="block mb-2 text-sm">
-                        {language === 'en' ? 'Phone' : 'Téléphone'}
+                        {language === "en" ? "Phone" : "Téléphone"}
                       </label>
                       <Input
                         type="tel"
@@ -139,7 +153,7 @@ export function ContactPage() {
                     </div>
                     <div>
                       <label className="block mb-2 text-sm">
-                        {language === 'en' ? 'Subject' : 'Sujet'}
+                        {language === "en" ? "Subject" : "Sujet"}
                       </label>
                       <Input
                         type="text"
@@ -148,7 +162,11 @@ export function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full"
-                        placeholder={language === 'en' ? 'Inquiry about...' : 'Demande concernant...'}
+                        placeholder={
+                          language === "en"
+                            ? "Inquiry about..."
+                            : "Demande concernant..."
+                        }
                       />
                     </div>
                     <div>
@@ -160,12 +178,22 @@ export function ContactPage() {
                         required
                         rows={5}
                         className="w-full"
-                        placeholder={language === 'en' ? 'Your message here...' : 'Votre message ici...'}
+                        placeholder={
+                          language === "en"
+                            ? "Your message here..."
+                            : "Votre message ici..."
+                        }
                       />
                     </div>
-                    <Button type="submit" className="w-full bg-primary hover:bg-primary/90" size="lg">
+                    <Button
+                      type="submit"
+                      className="w-full bg-primary hover:bg-primary/90"
+                      size="lg"
+                    >
                       <Send className="w-5 h-5 mr-2" />
-                      {language === 'en' ? 'Send Message' : 'Envoyer le Message'}
+                      {language === "en"
+                        ? "Send Message"
+                        : "Envoyer le Message"}
                     </Button>
                   </form>
                 </CardContent>
@@ -184,60 +212,69 @@ export function ContactPage() {
               <Card className="shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <h3 className="text-2xl mb-6 text-primary">
-                    {language === 'en' ? 'School Information' : 'Informations Scolaires'}
+                    {language === "en"
+                      ? "School Information"
+                      : "Informations Scolaires"}
                   </h3>
                   <div className="space-y-4">
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg"
                       whileHover={{ scale: 1.02 }}
                     >
                       <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <p className="text-sm text-muted-foreground mb-1">
-                          {language === 'en' ? 'Address' : 'Adresse'}
+                          {language === "en" ? "Address" : "Adresse"}
                         </p>
                         <p>
-                          Complex Pascal<br />
-                          [Your Address Here]<br />
+                          Complex Pascal
+                          <br />
+                          [Your Address Here]
+                          <br />
                           [City, Cameroon]
                         </p>
                       </div>
                     </motion.div>
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg"
                       whileHover={{ scale: 1.02 }}
                     >
                       <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <p className="text-sm text-muted-foreground mb-1">
-                          {language === 'en' ? 'Phone' : 'Téléphone'}
+                          {language === "en" ? "Phone" : "Téléphone"}
                         </p>
                         <p>+237 XXX XXX XXX</p>
                         <p>+237 XXX XXX XXX</p>
                       </div>
                     </motion.div>
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg"
                       whileHover={{ scale: 1.02 }}
                     >
                       <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <p className="text-sm text-muted-foreground mb-1">Email</p>
+                        <p className="text-sm text-muted-foreground mb-1">
+                          Email
+                        </p>
                         <p>info@complexpascal.com</p>
                         <p>admissions@complexpascal.com</p>
                       </div>
                     </motion.div>
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg"
                       whileHover={{ scale: 1.02 }}
                     >
                       <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <p className="text-sm text-muted-foreground mb-1">
-                          {language === 'en' ? 'Hours' : 'Horaires'}
+                          {language === "en" ? "Hours" : "Horaires"}
                         </p>
                         <p>
-                          {language === 'en' ? 'Monday - Friday' : 'Lundi - Vendredi'}: 7:00 - 17:00
+                          {language === "en"
+                            ? "Monday - Friday"
+                            : "Lundi - Vendredi"}
+                          : 7:00 - 17:00
                         </p>
                       </div>
                     </motion.div>
@@ -249,12 +286,14 @@ export function ContactPage() {
               <Card className="shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-secondary/5 to-secondary/10">
                 <CardContent className="p-8">
                   <h3 className="text-2xl mb-4 text-secondary">
-                    {language === 'en' ? 'Event Hall Bookings' : 'Réservations Salle de Fête'}
+                    {language === "en"
+                      ? "Event Hall Bookings"
+                      : "Réservations Salle de Fête"}
                   </h3>
                   <p className="mb-4 text-muted-foreground">
-                    {language === 'en' 
-                      ? 'For event hall reservations, please contact our events coordinator:'
-                      : 'Pour les réservations de salle de fête, veuillez contacter notre coordinateur d\'événements:'}
+                    {language === "en"
+                      ? "For event hall reservations, please contact our events coordinator:"
+                      : "Pour les réservations de salle de fête, veuillez contacter notre coordinateur d'événements:"}
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
@@ -273,7 +312,7 @@ export function ContactPage() {
               <Card className="shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <h3 className="text-2xl mb-6">
-                    {language === 'en' ? 'Follow Us' : 'Suivez-Nous'}
+                    {language === "en" ? "Follow Us" : "Suivez-Nous"}
                   </h3>
                   <div className="flex gap-4">
                     <motion.a
@@ -318,18 +357,35 @@ export function ContactPage() {
       >
         <div className="container mx-auto px-4">
           <h2 className="text-4xl mb-8 text-center">
-            {language === 'en' ? 'Find Us' : 'Trouvez-Nous'}
+            {language === "en" ? "Find Us" : "Trouvez-Nous"}
           </h2>
           <Card className="shadow-xl overflow-hidden">
-            <div className="w-full h-96 bg-muted flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <p>{language === 'en' ? 'Map placeholder' : 'Espace réservé pour la carte'}</p>
-                <p className="text-sm">
-                  {language === 'en' 
-                    ? 'Replace with actual embedded Google Maps'
-                    : 'Remplacer par une vraie carte Google Maps intégrée'}
-                </p>
+            <div className="w-full h-96 bg-muted flex items-center justify-center relative group cursor-pointer">
+              {/* Clickable overlay */}
+              <a
+                href="https://www.google.com/maps/place/Institut+MBOUGANG+PASCAL/@3.9678646,11.5343334,18z/data=!4m22!1m15!4m14!1m6!1m2!1s0x108bcf86f33e9e27:0x6ce698fc40310153!2sPoste+Centrale,+Yaound%C3%A9,+Cameroon!2m2!1d11.5204988!2d3.8606987!1m6!1m2!1s0x108bc7007a86d1cf:0x4b5f175995d7fdb4!2sInstitut+MBOUGANG+PASCAL,+Soa,+Cameroon!2m2!1d11.536158!2d3.9678352!3m5!1s0x108bc7007a86d1cf:0x4b5f175995d7fdb4!8m2!3d3.9678369!4d11.5361131!16s%2Fg%2F11w_dg0tt9?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                title="Open in Google Maps"
+              ></a>
+
+              {/* Embedded Google Map */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.999447502661!2d11.5343334!3d3.9678646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc7007a86d1cf%3A0x4b5f175995d7fdb4!2sInstitut%20MBOUGANG%20PASCAL!5e0!3m2!1sen!2s!4v1705616000000!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Institut Mbougang Pascal Location"
+                className="transition-transform duration-500 group-hover:scale-105"
+              ></iframe>
+
+              {/* Overlay hint */}
+              <div className="absolute bottom-4 right-4 bg-white/80 text-gray-800 px-3 py-1 rounded-lg text-sm hidden group-hover:flex items-center space-x-1">
+                <span>Click to view on Google Maps</span>
               </div>
             </div>
           </Card>

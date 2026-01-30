@@ -5,28 +5,32 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useNavigation } from '../contexts/NavigationContext';
+import event1 from "../assets/event1.jpg";
+import event2 from "../assets/event2.jpg";
+import event3 from "../assets/event3.jpg";
+// import event4 from "../assets/event4.jpg";
 
 const carouselImages = [
   {
-    url: "https://images.unsplash.com/photo-1763553113332-800519753e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZXZlbnQlMjBoYWxsJTIwd2VkZGluZ3xlbnwxfHx8fDE3Njg3NDQ0ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: event1,
     titleEn: "Elegant Event Space",
-    titleFr: "Espace Événementiel Élégant"
+    titleFr: "Espace Événementiel Élégant",
   },
   {
-    url: "https://images.unsplash.com/photo-1763231575952-98244918f99b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYmFucXVldCUyMGhhbGx8ZW58MXx8fHwxNzY4NzQ1OTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: event2,
     titleEn: "Banquet Setup",
-    titleFr: "Configuration Banquet"
+    titleFr: "Configuration Banquet",
   },
   {
-    url: "https://images.unsplash.com/photo-1613067532651-7075a620c900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcmVjZXB0aW9uJTIwdmVudWV8ZW58MXx8fHwxNzY4NzQ1OTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: event3,
     titleEn: "Wedding Reception",
-    titleFr: "Réception de Mariage"
+    titleFr: "Réception de Mariage",
   },
   {
-    url: "https://images.unsplash.com/photo-1768508951405-10e83c4a2872?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwcm9vbSUyMHNldHVwfGVufDF8fHx8MTc2ODc0NTk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    url: event2,
     titleEn: "Conference Setup",
-    titleFr: "Configuration Conférence"
-  }
+    titleFr: "Configuration Conférence",
+  },
 ];
 
 function ImageCarousel() {

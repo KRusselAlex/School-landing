@@ -13,6 +13,10 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useNavigation } from "../contexts/NavigationContext";
+import class1 from "../assets/class1.jpg";
+import class2 from "../assets/class2.jpg";
+import lab1 from "../assets/lab1.jpg";
+import event1 from "../assets/event1.jpg";
 
 export function AboutPage() {
   const { language, t } = useLanguage();
@@ -102,7 +106,7 @@ export function AboutPage() {
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5 }}
-            src="https://images.unsplash.com/photo-1739249327281-e918124ac540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzdHVkZW50cyUyMG91dGRvb3J8ZW58MXx8fHwxNzY4ODAyMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src={class1}
             alt="About Us"
             className="w-full h-full object-cover"
           />
@@ -173,7 +177,7 @@ export function AboutPage() {
             >
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY2hpbGRyZW4lMjBjbGFzc3Jvb218ZW58MXx8fHwxNzY4NzQ1ODM5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={lab1}
                 alt="Students"
                 className="rounded-lg shadow-lg h-64 w-full object-cover"
               />
@@ -185,13 +189,13 @@ export function AboutPage() {
               />
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1607586597362-cb492b31d4cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwc3R1ZGVudHMlMjBncm91cHxlbnwxfHx8fDE3Njg3NDU4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={event1}
                 alt="Learning"
                 className="rounded-lg shadow-lg h-64 w-full object-cover"
               />
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1565373086464-c8af0d586c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzY4NzM2NTk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={class2}
                 alt="Happy Students"
                 className="rounded-lg shadow-lg h-64 w-full object-cover mt-8"
               />

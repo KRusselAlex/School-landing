@@ -13,6 +13,18 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useNavigation } from "../contexts/NavigationContext";
+import class1 from "../assets/class1.jpg";
+import class2 from "../assets/class2.jpg";
+import class3 from "../assets/class3.jpg";
+import class4 from "../assets/class4.jpg";
+import lab1 from "../assets/lab1.jpg";
+import lab2 from "../assets/lab2.jpg";
+import lab3 from "../assets/lab3.jpg";
+import lab4 from "../assets/lab4.jpg";
+import lab5 from "../assets/lab5.jpg";
+import lab6 from "../assets/lab6.jpg";
+import event1 from "../assets/event1.jpg";
+
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -140,7 +152,7 @@ export function SecondarySchoolPage() {
             className="w-full h-full"
           >
             <img
-              src="https://images.unsplash.com/photo-1758270703156-8d6c7a781fc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWNvbmRhcnklMjBzY2hvb2wlMjBzdHVkZW50cyUyMGxlYXJuaW5nfGVufDF8fHx8MTc2ODc0NDQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+              src={class2}
               alt="Secondary School"
               className="w-full h-full object-cover"
             />
@@ -341,7 +353,7 @@ export function SecondarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1716654716581-3c92ba53de10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjBjb2xsYWJvcmF0aW9ufGVufDF8fHx8MTc2ODgwMzMwMHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={class3}
                 alt="Collaborative Learning"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -371,7 +383,7 @@ export function SecondarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1444840535719-195841cb6e2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMGNoaWxkcmVuJTIwbGVhcm5pbmclMjB0b2dldGhlcnxlbnwxfHx8fDE3Njg4MDMyOTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={class2}
                 alt="Language Learning"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -401,7 +413,7 @@ export function SecondarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1676285885390-486f6cc426a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHN0dWRlbnRzJTIwc3R1ZHlpbmd8ZW58MXx8fHwxNzY4ODAzMzAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={class1}
                 alt="Studying Students"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -431,7 +443,7 @@ export function SecondarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjBjbGFzc3Jvb20lMjBzbWlsaW5nfGVufDF8fHx8MTc2ODgwMzI5OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={event1}
                 alt="Activities"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -489,7 +501,7 @@ export function SecondarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1617056239820-8ce90ba48193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc2Nob29sJTIwY2hpbGRyZW4lMjBvdXRkb29yfGVufDF8fHx8MTc2ODgwMzMwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={lab4}
                 alt="Science Learning"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -550,7 +562,7 @@ export function SecondarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1605781645799-c9c7d820b4ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwbGFib3JhdG9yeSUyMHN0dWRlbnRzfGVufDF8fHx8MTc2ODYzNzI0OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={lab5}
                 alt="Science Lab"
                 className="w-full h-80 object-cover"
               />
@@ -576,7 +588,7 @@ export function SecondarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1647667436195-6954ef8b27e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDF8fHx8MTc2ODc0NTgzOXww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={class4}
                 alt="School Building"
                 className="w-full h-80 object-cover"
               />

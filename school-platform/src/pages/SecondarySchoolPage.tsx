@@ -24,6 +24,8 @@ import lab4 from "../assets/lab4.jpg";
 import lab5 from "../assets/lab5.jpg";
 import lab6 from "../assets/lab6.jpg";
 import event1 from "../assets/event1.jpg";
+import college from "../assets/collge.jpg";
+
 
 
 interface FeatureCardProps {
@@ -588,7 +590,7 @@ export function SecondarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src={class4}
+                src={college}
                 alt="School Building"
                 className="w-full h-80 object-cover"
               />

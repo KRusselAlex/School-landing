@@ -13,6 +13,9 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useNavigation } from "../contexts/NavigationContext";
+import campus from "../assets/batiment.jpg";
+import college from "../assets/collge.jpg";
+import cour2 from "../assets/cour2.jpg";
 
 interface HighlightCardProps {
   icon: React.ReactNode;
@@ -478,7 +481,7 @@ export function PrimarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1617056239820-8ce90ba48193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc2Nob29sJTIwY2hpbGRyZW4lMjBvdXRkb29yfGVufDF8fHx8MTc2ODgwMzMwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={college}
                 alt="School Location"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -513,7 +516,7 @@ export function PrimarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY2hpbGRyZW4lMjBjbGFzc3Jvb218ZW58MXx8fHwxNzY4NzQ1ODM5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={college}
                 alt="Classroom"
                 className="w-full h-64 object-cover"
               />
@@ -523,11 +526,7 @@ export function PrimarySchoolPage() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <img
-                src="https://images.unsplash.com/photo-1607586597362-cb492b31d4cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwc3R1ZGVudHMlMjBncm91cHxlbnwxfHx8fDE3Njg3NDU4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Teachers and Students"
-                className="w-full h-64 object-cover"
-              />
+              <img src={cour2} className="w-full h-64 object-cover" />
             </motion.div>
             <motion.div
               className="rounded-lg overflow-hidden shadow-lg"
@@ -535,7 +534,7 @@ export function PrimarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1565373086464-c8af0d586c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzY4NzM2NTk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={campus}
                 alt="Happy Learning"
                 className="w-full h-64 object-cover"
               />

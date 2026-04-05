@@ -19,6 +19,7 @@ import { Card, CardContent } from "../components/ui/card";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useNavigation } from "../contexts/NavigationContext";
 import { useState } from "react";
+import prim4 from "../assets/prim4.jpg";
 
 export function HomePage() {
   const { language, t } = useLanguage();
@@ -127,8 +128,7 @@ export function HomePage() {
         "Notre équipe stable d'éducateurs qualifiés apporte des années d'expertise, garantissant une attention personnalisée et d'excellents résultats d'apprentissage pour chaque élève.",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1565373086464-c8af0d586c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzY4NzM2NTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      imageUrl: prim4,
       titleEn: "Perfect Bilingual Education",
       titleFr: "Éducation Bilingue Parfaite",
       descEn:

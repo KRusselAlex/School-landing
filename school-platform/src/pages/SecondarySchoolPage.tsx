@@ -20,7 +20,7 @@ import class4 from "../assets/class4.jpg";
 import lab1 from "../assets/lab1.jpg";
 import lab2 from "../assets/lab2.jpg";
 import lab3 from "../assets/lab3.jpg";
-import lab4 from "../assets/lab4.jpg";
+import lab4 from "../assets/lab4.webp";
 import lab5 from "../assets/lab5.jpg";
 import lab6 from "../assets/lab6.jpg";
 import event1 from "../assets/event1.jpg";

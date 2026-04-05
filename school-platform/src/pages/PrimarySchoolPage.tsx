@@ -16,7 +16,10 @@ import { useNavigation } from "../contexts/NavigationContext";
 import campus from "../assets/batiment.jpg";
 import college from "../assets/collge.jpg";
 import cour2 from "../assets/cour2.jpg";
-
+import prim1 from "../assets/prim1.jpg";
+import prim2 from "../assets/prim2.jpg";
+import prim3 from "../assets/prim3.jpg";
+import prim4 from "../assets/prim4.jpg";
 interface HighlightCardProps {
   icon: React.ReactNode;
   titleEn: string;
@@ -143,7 +146,7 @@ export function PrimarySchoolPage() {
             className="w-full h-full"
           >
             <img
-              src="https://images.unsplash.com/photo-1641683521844-700c456379bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmltYXJ5JTIwc2Nob29sJTIwY2xhc3Nyb29tJTIwY2hpbGRyZW58ZW58MXx8fHwxNzY4NzQ0NDgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={prim4}
               alt="Primary School"
               className="w-full h-full object-cover opacity-20"
             />
@@ -331,7 +334,7 @@ export function PrimarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1744809482817-9a9d4fc280af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdGVhY2hlciUyMHN0dWRlbnRzfGVufDF8fHx8MTc2ODgwMzMwMHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={prim1}
                 alt="Experienced Teachers"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -361,7 +364,7 @@ export function PrimarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1515302569996-e150029e73fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwa2lkcyUyMHNjaG9vbCUyMGhhcHB5fGVufDF8fHx8MTc2ODgwMzI5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+                src={prim4}
                 alt="Happy Students"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -391,8 +394,7 @@ export function PrimarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1523396140703-e5bdad4e5dea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwY2hpbGRyZW4lMjByZWFkaW5nJTIwYm9va3N8ZW58MXx8fHwxNzY4ODAzMzAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Reading Children"
+                src={prim3}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
@@ -420,11 +422,7 @@ export function PrimarySchoolPage() {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
-              <img
-                src="https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjBjbGFzc3Jvb20lMjBzbWlsaW5nfGVufDF8fHx8MTc2ODgwMzI5OHww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Caring Environment"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
+              <img src={prim2} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <Star className="w-12 h-12 text-white mb-4" />
@@ -451,7 +449,7 @@ export function PrimarySchoolPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1666281269793-da06484657e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIweW91dGglMjBlZHVjYXRpb258ZW58MXx8fHwxNzY4ODAzMzAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src={prim1}
                 alt="Excellence"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -516,7 +514,7 @@ export function PrimarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src={college}
+                src={prim4}
                 alt="Classroom"
                 className="w-full h-64 object-cover"
               />
@@ -526,7 +524,7 @@ export function PrimarySchoolPage() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <img src={cour2} className="w-full h-64 object-cover" />
+              <img src={prim4} className="w-full h-64 object-cover" />
             </motion.div>
             <motion.div
               className="rounded-lg overflow-hidden shadow-lg"
@@ -534,7 +532,7 @@ export function PrimarySchoolPage() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src={campus}
+                src={prim2}
                 alt="Happy Learning"
                 className="w-full h-64 object-cover"
               />
